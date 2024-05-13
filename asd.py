@@ -65,7 +65,7 @@ def create_sample_hotel():
 def main():
     hotel = create_sample_hotel()
 
-    for _ in range(5):
+    for _ in range(1):
         tomorrow = datetime.now() + timedelta(days=1)
         datum = tomorrow.strftime('%Y-%m-%d')
         print(datum)
@@ -73,7 +73,7 @@ def main():
         hotel.foglal("201", datum)
         tomorrow += timedelta(days=1)
 
-    print("Üdvözöljük a Példa Szállodában!")
+    print("Üdvözöljük a Jó Szállodában!")
     while True:
         print("\nVálasszon egy műveletet:")
         print("1. Foglalás")
